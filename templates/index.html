@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Comentarios destacados</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <h1>Reseñas destacadas</h1>
+
+    <!-- Botones de filtro por valoración -->
+    <div id="filter-buttons">
+        <button onclick="filterReviews(5)">5 Estrellas</button>
+        <button onclick="filterReviews(4)">4 Estrellas</button>
+        <button onclick="filterReviews(3)">3 Estrellas</button>
+        <button onclick="filterReviews(2)">2 Estrellas</button>
+        <button onclick="filterReviews(1)">1 Estrella</button>
+        <button onclick="filterReviews(0)">Mostrar Todas</button>
+        <button onclick="toggleTopWords()">Top 10 Palabras</button>
+    </div>
+
+    <!-- Contenedor de reseñas -->
+    <div id="reviews-container">
+        {% for review in reviews %}
+            <div class="review-card" data-rating="{{ review.rating }}">
+                <h2>{{ review.movie }}</h2>
+                <p>{{ review.review }}</p>
+                <p><strong>Valoración:</strong> {{ '⭐' * review.rating }}</p>
+            </div>
+        {% endfor %}
+    </div>
+
+    <!-- Contenedor Top 10 palabras -->
+    <div id="top-words" style="display:none; background-color: rgba(0,0,0,0.7); padding:15px; margin-top:20px; border-radius:8px;">
+        <h2>Top 10 palabras más utilizadas</h2>
+        <ol>
+            {% for word, count in top_words %}
+                <li>{{ word }} ({{ count }} veces)</li>
+            {% endfor %}
+        </ol>
+    </div>
+
+    <script>
+        function filterReviews(rating) {
+            const cards = document.querySelectorAll('.review-card');
+            cards.forEach(card => {
+                if (rating === 0 || parseInt(card.getAttribute('data-rating')) === rating) {
+                    card.style.display = 'block';
+                } else {
+                    card.style.display = 'none';
+                }
+            });
+        }
+
+        function toggleTopWords() {
+            const reviewsContainer = document.getElementById('reviews-container');
+            const topWordsDiv = document.getElementById('top-words');
+
+            if (topWordsDiv.style.display === 'none') {
+                // Mostrar Top 10, ocultar reseñas
+                topWordsDiv.style.display = 'block';
+                reviewsContainer.style.display = 'none';
+            } else {
+                // Mostrar reseñas, ocultar Top 10
+                topWordsDiv.style.display = 'none';
+                reviewsContainer.style.display = 'grid'; // Asegúrate que sea 'grid' para mostrar correctamente
+            }
+        }
+    </script>
+</body>
+</html>
