@@ -2,6 +2,7 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Comentarios destacados</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
 </head>
@@ -31,7 +32,7 @@
     </div>
 
     <!-- Contenedor Top 10 palabras -->
-    <div id="top-words" style="display:none; background-color: rgba(0,0,0,0.7); padding:15px; margin-top:20px; border-radius:8px;">
+    <div id="top-words" style="display:none;" class="top-words-box">
         <h2>Top 10 palabras más utilizadas</h2>
         <ol>
             {% for word, count in top_words %}
@@ -57,13 +58,11 @@
             const topWordsDiv = document.getElementById('top-words');
 
             if (topWordsDiv.style.display === 'none') {
-                // Mostrar Top 10, ocultar reseñas
                 topWordsDiv.style.display = 'block';
                 reviewsContainer.style.display = 'none';
             } else {
-                // Mostrar reseñas, ocultar Top 10
                 topWordsDiv.style.display = 'none';
-                reviewsContainer.style.display = 'grid'; // Asegúrate que sea 'grid' para mostrar correctamente
+                reviewsContainer.style.display = 'grid';
             }
         }
     </script>

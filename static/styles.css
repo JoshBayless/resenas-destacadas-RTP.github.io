@@ -6,7 +6,7 @@ body {
     text-shadow: 1px 1px 2px black;
 
     /* Imagen de fondo local RTP.jpg */
-    background: url('RTP.jpg') no-repeat center center fixed;
+    background: url('RTP.jpg') no-repeat center center;
     background-size: cover;
     position: relative;
 }
@@ -29,6 +29,7 @@ h1 {
 #filter-buttons {
     text-align: center;
     margin: 20px 0;
+    flex-wrap: wrap;
 }
 
 #filter-buttons button {
@@ -65,11 +66,28 @@ h1 {
     transform: scale(1.05);
 }
 
+.top-words-box {
+    background-color: rgba(0,0,0,0.7);
+    padding: 15px;
+    margin-top: 20px;
+    border-radius: 8px;
+}
+
 @media (max-width: 600px) {
     h1 {
         font-size: 2em;
     }
+
     #filter-buttons button {
         font-size: 0.9em;
+        padding: 8px 12px;
+    }
+
+    .review-card {
+        padding: 10px;
+    }
+
+    body {
+        padding: 10px;
     }
 }
