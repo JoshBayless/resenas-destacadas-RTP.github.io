@@ -8,15 +8,15 @@
     {"movie": "Participante_030", "review": "Implementen encuestas periódicas para conocer las necesidades y el nivel de satisfacción de los usuarios. Así se daran cuenta de la realidad que vive la RTP.", "rating": 4},
     {"movie": "Participante_006", "review": "Una aplicación móvil con información sobre rutas, horarios, tarifas y noticias del servicio sería muy útil.", "rating": 4},
     {"movie": "Participante_189", "review": "La nueva ruta de RTP será un gran alivio para los estudiantes y el personal, ya que mejorará la conectividad entre los diferentes campus y la ciudad, reduciendo tiempos de traslado.", "rating": 5},
-    {"movie": "Participante_089", "review": "La creación de la ruta podría generar congestión en algunas calles si no se coordina bien con el resto del transporte público y las autoridades locales.", "rating": 1}
-    {"movie": "Participante_142", "review": "Muy buena idea. Ojalá consideren horarios en la tarde/noche para los que salimos tarde", "rating": 3}
-    {"movie": "Participante_102", "review": "Habilitar una app o página web donde se pueda consultar el horario actualizado.", "rating": 4}
-    {"movie": "Participante_230", "review": "Implementar rutas piloto según resultados y ajustar según uso real.", "rating": 4}
-    {"movie": "Participante_046", "review": "Incluir cámaras de seguridad y botones de emergencia en cada unidad.", "rating": 5}
-    {"movie": "Participante_185", "review": "Capacitar a los choferes en trato con estudiantes, manejo responsable y primeros auxilios.", "rating": 5}
-    {"movie": "Participante_107", "review": "Crear un formulario en línea para quejas y sugerencias anónimas. También consideren la seguridad de las niñas. Pongan cámaras de seguridad en los camiones.", "rating": 5}
-    {"movie": "Participante_166", "review": "Colocar buzones físicos en la universidad para quienes no tienen acceso digital.", "rating": 5}
-    {"movie": "Participante_136", "review": "Revisar semanalmente los reportes y publicar acciones tomadas.", "rating": 5}
-    {"movie": "Participante_151", "review": "Que los camiones no esten sucios o en mal estado. Ya es suficiente con tener los salones sucios.", "rating": 1}
+    {"movie": "Participante_089", "review": "La creación de la ruta podría generar congestión en algunas calles si no se coordina bien con el resto del transporte público y las autoridades locales.", "rating": 1},
+    {"movie": "Participante_142", "review": "Muy buena idea. Ojalá consideren horarios en la tarde/noche para los que salimos tarde", "rating": 3},
+    {"movie": "Participante_102", "review": "Habilitar una app o página web donde se pueda consultar el horario actualizado.", "rating": 4},
+    {"movie": "Participante_230", "review": "Implementar rutas piloto según resultados y ajustar según uso real.", "rating": 4},
+    {"movie": "Participante_046", "review": "Incluir cámaras de seguridad y botones de emergencia en cada unidad.", "rating": 5},
+    {"movie": "Participante_185", "review": "Capacitar a los choferes en trato con estudiantes, manejo responsable y primeros auxilios.", "rating": 5},
+    {"movie": "Participante_107", "review": "Crear un formulario en línea para quejas y sugerencias anónimas. También consideren la seguridad de las niñas. Pongan cámaras de seguridad en los camiones.", "rating": 5},
+    {"movie": "Participante_166", "review": "Colocar buzones físicos en la universidad para quienes no tienen acceso digital.", "rating": 5},
+    {"movie": "Participante_136", "review": "Revisar semanalmente los reportes y publicar acciones tomadas.", "rating": 5},
+    {"movie": "Participante_151", "review": "Que los camiones no esten sucios o en mal estado. Ya es suficiente con tener los salones sucios.", "rating": 1},
     {"movie": "Participante_082", "review": "Están gastando recursos de la universidad cuando hay otras prioridades más urgentes.", "rating": 1}
 ]
